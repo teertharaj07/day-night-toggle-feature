@@ -1,5 +1,7 @@
 import { use } from "react";
 import { createContext, useState } from "react";
+import { WiDaySunny } from "react-icons/wi";
+import { GiNightSleep } from "react-icons/gi";
 // Context creation
 // eslint-disable-next-line react-refresh/only-export-components
 export const ThemeContext = createContext();
@@ -55,6 +57,9 @@ export const DarkLight = () => {
       >
         {theme === "dark" ? "Switch to Light Mode" : "Switch to Dark Mode"}
       </button>
+      <div className=  { ` icon ${theme === "dark" ? "day-icon" : "night-icon"}`} onClick={handleToggleTheme}>  {theme === "dark" ? <WiDaySunny /> :<GiNightSleep /> }</div>
+     
+   
     </div>
   );
 };

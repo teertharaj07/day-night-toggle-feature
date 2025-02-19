@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+.day-icon {
+color: white;
+}
+
+.night-icon {
+    color: black
+
+
+}
+
+.icon {
+    width: 64px;
+    height: 64px;
+    
+    border-radius: 50%;
+    padding: auto;
+
+    font-size: 30px;
+    border-radius: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon:hover{
+    background-color: gray;
+}
